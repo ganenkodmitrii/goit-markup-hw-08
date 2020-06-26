@@ -1,0 +1,44 @@
+// Список достоинств
+
+.dignity__title {
+  @extend %visually-hidden;
+}
+
+.dignity__list {
+  @extend %list;
+}
+
+.dignity__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.dignity__icon {
+  @include centeredFlex(flex);
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $primary-bg-color;
+  border-radius: 4px;
+}
+
+.dignity__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* background-color: cadetblue; */
+}
+
+.dignity__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}

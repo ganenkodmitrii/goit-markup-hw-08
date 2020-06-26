@@ -1,0 +1,15 @@
+.logo {
+  color: $accent-color;
+  font-family: $logo-font-family;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo__accent-darc {
+  color: #000000;
+}
+
+.logo__accent-light {
+  color: $primary-color;
+}
