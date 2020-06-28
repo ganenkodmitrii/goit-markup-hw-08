@@ -6,10 +6,32 @@
 
 .dignity__list {
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    @include centeredFlex(flex);
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
-.dignity__item:not(:last-child) {
-  margin-bottom: 30px;
+.dignity__item {
+  @media screen and(max-width:767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and(min-width:768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: calc((100% -4 * 30px) / 4);
+  }
 }
 
 .dignity__icon {

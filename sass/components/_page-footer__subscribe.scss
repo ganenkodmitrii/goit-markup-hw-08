@@ -1,0 +1,49 @@
+// .page-footer__subscribe {
+//   @include centeredFlex(flex);
+// }
+
+.page-footer__input {
+  display: block;
+  width: 100%;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  //   min-width: 450px;
+  // margin-right: 12px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $secondary-bg-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    align-items: center;
+  }
+}
+
+.page-footer__button {
+  @extend %button;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 29px;
+  padding-right: 28px;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.page-footer__icon-send {
+  margin-left: 10px;
+}

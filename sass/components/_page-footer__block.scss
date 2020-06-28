@@ -1,0 +1,15 @@
+.page-footer__block {
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+.page-footer__block--box {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.page-footer__block--address {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,49 @@
+.icons-list {
+  @extend %list;
+  @include centeredFlex(flex);
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.icons-list__link {
+  @include centeredFlex(flex);
+  align-items: stretch;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+}
+
+.icons-list__img {
+  fill: currentColor;
+}
+
+.icons-list__link-dark {
+  color: #afb1b8;
+  background-color: $primary-color;
+
+  // @include transition(
+  //   color 250ms $timing-function,
+  //   background-color 250ms $timing-function
+  // );
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    background-color: $accent-color;
+  }
+}
+
+.icons-list__link-light {
+  color: $primary-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

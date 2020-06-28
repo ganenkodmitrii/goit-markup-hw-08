@@ -81,7 +81,8 @@
               <h3 class="dignity__subtitle">Внимание к деталям</h3>
               <p class="dignity__text">
                 Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                формированию
+                <!-- позиции. -->
               </p>
             </li>
             <li class="dignity__item">
@@ -124,10 +125,10 @@
         </div>
       </section>
       <!--Род занятий-->
-      <section class="section">
+      <section class="section occupation">
         <div class="section__box">
           <h2 class="section__title">Чем мы занимаемся</h2>
-          <ul class="occupation">
+          <ul class="occupation-list">
             <li class="occupation__item">
               <img
                 class="image"
@@ -168,11 +169,14 @@
           <ul class="team-box__list">
             <li class="team-box__item">
               <img
+                srcset="
+                  ./images/Николай-Кучеренко.jpg    1x,
+                  ./images/Николай-Кучеренко@2x.jpg 2x
+                "
                 class="image"
-                src="./images/foto-John-Smith.jpg"
-                width="270"
-                height="260"
+                src="./images/Николай-Кучеренко.jpg"
                 alt="фото Николай Кучеренко"
+                width="270"
               />
               <div class="team-box__content">
                 <h3 class="team-box__name">Николай Кучеренко</h3>
@@ -223,11 +227,14 @@
             </li>
             <li class="team-box__item">
               <img
+                srcset="
+                  ./images/Ольга-Иванова.jpg    1x,
+                  ./images/Ольга-Иванова@2x.jpg 2x
+                "
                 class="image"
-                src="./images/foto-Marta-Stewart.jpg"
-                width="270"
-                height="260"
+                src="./images/Ольга-Иванова.jpg"
                 alt="фото Ольга Иванова"
+                width="270"
               />
               <div class="team-box__content">
                 <h3 class="team-box__name">Ольга Иванова</h3>
@@ -278,11 +285,14 @@
             </li>
             <li class="team-box__item">
               <img
+                srcset="
+                  ./images/Андрей-Шевченко.jpg    1x,
+                  ./images/Андрей-Шевченко@2x.jpg 2x
+                "
                 class="image"
-                src="./images/foto-Robert-Jakis.jpg"
-                width="270"
-                height="260"
+                src="./images/Андрей-Шевченко.jpg"
                 alt="фото Андрей Шевченко"
+                width="270"
               />
               <div class="team-box__content">
                 <h3 class="team-box__name">Андрей Шевченко</h3>
@@ -333,11 +343,14 @@
             </li>
             <li class="team-box__item">
               <img
+                srcset="
+                  ./images/Иван-Николаев.jpg    1x,
+                  ./images/Иван-Николаев@2x.jpg 2x
+                "
                 class="image"
-                src="./images/foto-Martin-Doe.jpg"
-                width="270"
-                height="260"
+                src="./images/Иван-Николаев.jpg"
                 alt="фото Иван Николаев"
+                width="270"
               />
               <div class="team-box__content">
                 <h3 class="team-box__name">Иван Николаев</h3>
@@ -445,17 +458,17 @@
     <!--Подвал-->
     <footer class="page-footer">
       <div class="page-footer__box">
-        <div>
-          <a href="#" class="logo page-footer__block"
+        <div class="page-footer__block">
+          <a href="#" class="logo page-footer__block--box"
             >Web<span class="logo__accent-light"> Studio</span></a
           >
-          <address class="page-footer__address address-indent">
+          <address class="page-footer__address page-footer__block--address">
             г. Киев, пр-т Леси Украинки, 26
           </address>
           <address class="page-footer__address">
             <a
               href="mailto:info@devstudio.com"
-              class="page-footer__link address-indent"
+              class="page-footer__link page-footer__block--address"
               >info@example.com</a
             >
             <a href="tel:+380961111111" class="page-footer__link"
@@ -463,8 +476,10 @@
             >
           </address>
         </div>
-        <div>
-          <b class="page-footer__tagline page-footer__block">присоединяйтесь</b>
+        <div class="page-footer__block">
+          <b class="page-footer__tagline page-footer__block--box"
+            >присоединяйтесь</b
+          >
           <ul class="icons-list">
             <li class="icons-list__item">
               <a
@@ -508,8 +523,8 @@
             </li>
           </ul>
         </div>
-        <div>
-          <b class="page-footer__tagline page-footer__block"
+        <div class="page-footer__block">
+          <b class="page-footer__tagline page-footer__block--box"
             >Подпишитесь на рассылку</b
           >
           <div class="page-footer__subscribe">
