@@ -1,11 +1,41 @@
 .page-footer__box {
   @extend %container;
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
 
-  //   @include centeredFlex(flex);
-  //   align-items: baseline;
-  //   justify-content: space-between;
-  //   padding-top: 60px;
-  //   padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    justify-content: space-around;
+  }
+
+  @media screen and(min-width:1200px) {
+    @include centeredFlex(flex);
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
+
+// @media screen and (max-width: 1199px) and (min-width: 768px) .footer__content {
+//   -ms-flex-pack: distribute;
+//   justify-content: space-around;
+// }
+// @media screen and (min-width: 768px) .footer__content {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -ms-flex-wrap: wrap;
+//   flex-wrap: wrap;
+// }
+
+// .page-footer__box--tablet {
+//   @media screen and(min-width: 768px) and(max-width:1199px) {
+//     @include centeredFlex(flex);
+//     align-items: baseline;
+//     justify-content: space-around;
+//   }
+// }

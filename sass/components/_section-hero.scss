@@ -1,9 +1,17 @@
 // Герой
 
 .section-hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
   text-align: center;
+
+  @media screen and(max-width:1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .section-hero__title {
@@ -12,12 +20,20 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
+
   color: $primary-color;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and(min-width:1200px) {
+    width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .section-hero__button {

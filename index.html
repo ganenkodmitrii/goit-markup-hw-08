@@ -12,43 +12,63 @@
   </head>
   <body>
     <!--Шапка сайта-->
+    <!-- page-header--border -->
     <header class="page-header">
       <div class="page-header__box">
-        <a href="#" class="logo page-header__logo"
-          >Web<span class="logo__accent-darc"> Studio</span></a
-        >
-
         <nav class="page-header__nav">
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link current">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
+          <a href="#" class="logo page-header__logo"
+            >Web<span class="logo__accent-darc"> Studio</span></a
+          >
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="переключатнль мобильного меню"
+            >
+              <use class="icon-burger" href="./images/sprite.svg#menu"></use>
+              <use class="icon-cross" href="./images/sprite.svg#cross "></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link current">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="site-address">
+              <li class="site-address__item">
+                <a href="mailto:info@devstudio.com" class="site-address__link">
+                  <svg class="icon-envelope" width="16" height="11.02">
+                    <use href="./images/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="site-address__item">
+                <a href="tel:+380961111111" class="site-address__link">
+                  <svg class="icon-smartphone" width="10" height="14.94">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="site-address">
-          <li class="site-address__item">
-            <a href="mailto:info@devstudio.com" class="site-address__link">
-              <svg class="icon-envelope" width="16" height="11.02">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="site-address__item">
-            <a href="tel:+380961111111" class="site-address__link">
-              <svg class="icon-smartphone" width="10" height="14.94">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -66,7 +86,7 @@
       </div>
 
       <!--Достоинство и преимущество -->
-      <section class="section">
+      <section class="section dignity">
         <div class="section__box">
           <h2 class="dignity__title">
             Достоинство и преимущество нашей компании
@@ -476,6 +496,7 @@
             >
           </address>
         </div>
+
         <div class="page-footer__block">
           <b class="page-footer__tagline page-footer__block--box"
             >присоединяйтесь</b
@@ -523,6 +544,7 @@
             </li>
           </ul>
         </div>
+
         <div class="page-footer__block">
           <b class="page-footer__tagline page-footer__block--box"
             >Подпишитесь на рассылку</b
@@ -633,5 +655,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,11 @@
 // Список достоинств
 
+.dignity {
+  @media screen and(min-width:1200px) {
+    padding-bottom: 0;
+  }
+}
+
 .dignity__title {
   @extend %visually-hidden;
 }
