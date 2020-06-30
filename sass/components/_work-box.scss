@@ -1,0 +1,121 @@
+.work-box {
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.work-box__item {
+  border: 1px solid #eeeeee;
+
+  transition: box-shadow 250ms var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    //   width: 354px;
+    margin: 15px;
+  }
+
+  @media screen and( min-width:1200px) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+
+  @media screen and(max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.work-box__thumb {
+  height: 294px;
+}
+
+.work-box__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.work-box__link {
+  text-decoration: none;
+}
+
+.work-box__info {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-box__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: transform 250ms $timing-function;
+
+  .work-box__item:hover &,
+  .work-box__item:focus & {
+    transform: translateY(0);
+  }
+}
+
+.work-box__text {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 77px 24px;
+
+  color: $primary-color;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
+}
+
+.work-box__desc {
+  padding: 20px 24px;
+}
+
+.work-box__title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.work-box__subtitle {
+  margin: 0;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+}

@@ -1,11 +1,10 @@
 @import "./utils/variables";
 @import "./utils/placeholders";
 @import "./utils/mixins";
-@import "./utils/breakpoint";
 @import "./base/normolize";
 @import "./components/general-settings";
 @import "./components/page-header";
-// @import "./components/page-header__logo";
+@import "./components/page-header--border";
 @import "./components/logo";
 @import "./components/menu-button";
 @import "./components/menu-container";
@@ -18,6 +17,9 @@
 @import "./components/team-box";
 @import "./components/icon-list";
 @import "./components/company-list";
+
+@import "./components/section-work";
+@import "./components/work-box";
 
 @import "./components/page-footer";
 @import "./components/page-footer__box";

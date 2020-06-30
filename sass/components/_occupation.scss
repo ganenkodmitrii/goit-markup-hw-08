@@ -7,16 +7,30 @@
 .occupation-list {
   @include centeredFlex(flex);
   @extend %list;
+  margin: -15px;
 
   text-align: center;
 }
 
 .occupation__item {
   position: relative;
+  width: calc((100% - 3 * 30px) / 3);
+  margin: 15px;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+}
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+.occupation__thumb {
+  height: 294px;
+}
+
+.occupation__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .occupation__desc {
